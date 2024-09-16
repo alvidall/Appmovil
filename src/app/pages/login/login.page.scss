@@ -1,0 +1,78 @@
+ion-content{
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  --padding-end: 20px;
+  --padding-start: 20px;
+}
+
+ion-item{
+  --padding-bottom: 10px;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  height: 90vh;           /* Ocupa toda la altura de la pantalla */
+}
+
+.foto-portada {
+  width: 100%;
+}
+
+@media screen and (orientation: landscape) {
+  .center-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 80%;           /* Ocupa toda la altura de la pantalla */
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .foto-portada {
+    width: 30%;
+  }
+}
+
+.centrar {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+}
+.footer {
+  background-color: #1A1A1A; /* Color negro de la paleta */
+  color: #FFFFFF; /* Texto en blanco para el footer */
+  padding: 20px; /* Ajusta el padding según sea necesario */
+  text-align: center; /* Centra el texto dentro del footer */
+}
+ion-card {
+  background-color: #F78B30 !important; /* Color de fondo del ion-card */
+  color: #000000 !important; /* Color del texto dentro del ion-card */
+}
+//lo dejare comentado porque el logo no funciona bien si empiezo a cambiar el tamaño de pantalla
+/*
+.logo {
+  // Ajusta según tu necesidad la altura
+  position: absolute;
+  top: 15px;
+
+  // Ajusta según tu necesidad el lugar de izquierda a derecha
+  left: 300px;
+
+  // Ajusta el tamaño según tu necesidad
+  width: 200px;
+
+  // Mantiene la proporción original de la imagen
+  height: auto;
+
+  // Asegura que el logo esté por encima de otros elementos
+  z-index: 1000;
+}
+*/
